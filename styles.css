@@ -23,12 +23,21 @@ button {
   margin: 40px 0px 20px 20px;
   font-size: 0;
   line-height: 45px;
+  margin: 40px 20px 0px 20px;
 }
 
 li {
   display: inline;
   margin: 0 25px;
   color: #025157;
+}
+
+.fixed-header{
+  position: fixed;
+  background-color: white;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .header > * {
@@ -72,4 +81,29 @@ li {
   padding: 12px 14px;
   border: none;
   border-radius: 5px;
+}
+
+.promo {
+  display: flex;
+  width: 70%;
+  margin: 100px auto;
+  align-items: center;
+}
+
+.promo > * {
+  margin: auto 20px;
+}
+
+.video-text > h2 {
+  color: #025157;
+}
+
+.video-text > p {
+  color: #343434;
+}
+
+.video-container > img {
+  margin: auto;
+  display: flex;
+  height: 40px;
 }
