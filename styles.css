@@ -1,109 +1,226 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya:900|Open+Sans|Slabo+27px&display=swap');
+
 body {
-  background-color: #f49e47;
-  background-image: url('https://pro2-bar-s3-cdn-cf.myportfolio.com/67cf45ca-338d-4fd0-943b-32d96162976a/b7b52d14-b827-4c3a-906f-3b94fa13f35f_rw_1920.png');
-}
-
-h1 {
-  color: #46484c;
-  text-align: center;
-}
-
-p {
-  color: #8b8b8bcc;
-  font-family: verdana;
-  font-size: 20px;
-}
-
-button {
-  color: #fff;
-  background-color: #025157;
-}
-
-.header {
-  margin: 40px 0px 20px 20px;
-  font-size: 0;
-  line-height: 45px;
-  margin: 40px 20px 0px 20px;
-}
-
-li {
-  display: inline;
-  margin: 0 25px;
-  color: #025157;
-}
-
-.fixed-header{
-  position: fixed;
-  background-color: white;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-.header > * {
-  display: inline-block;
-  font-size: 16px;
-  vertical-align: middle;
-  height: 100%;
-  line-height: 45px;
-}
-
-.logo {
-  width: 15%;
+  background-color: #fffbf7;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
 }
 
 .navbar {
-  width: 70%;
-  color: green;
-  text-align: left;
+  background-color: white;
+  position: fixed;
+  line-height: 45px;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0;
 }
 
-.navbar > * {
-  font-family: sans-serif;
+.navbar-brand {
+  display: inline-block;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 15%;
+}
+
+.navbar-brand img {
+  display: inline;
+  vertical-align: middle;
+  margin: 20px 15px;
+  height: 35px;
 }
 
 .actions {
-  width: 15%;
+  display: inline-flex;
+  margin: auto;
+  width: 65%;
+  height: 100%;
+}
+
+.actions-ul {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.ul-item {
+  font-size: 1rem;
+  color: #025157;
+  display: inline;
+  margin: 0 4px;
+  list-style: none;
+}
+
+.ul-item:hover {
+  color: black;
+}
+
+.buttons {
+  display: inline-flex;
+  margin: 0;
+  margin-right: 0;
+  width: 19%;
+}
+
+.buttons-inline {
+  display: inline-block;
+  margin: auto;
+  margin-right: 20px;
+}
+
+.buttons-inline > * {
   font-size: 14px;
+  height: 55px;
+  margin: 0 3px;
 }
 
-.actions > * {
-  margin: 0 10px;
-}
-
-.sign-in-button {
-  color: #67b54b;
-}
-
-.free-trial-button {
-  color: white;
-  background-color: #67b54b;
-  padding: 12px 14px;
+.signin-button {
+  background-color: transparent;
   border: none;
-  border-radius: 5px;
+  color: #67b54b;
+  font-weight: 500;
+}
+
+.freetrial-button {
+  background-color: #67b54b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  width: 110px;
+}
+
+.content {
+  margin-top: 50px;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
 
 .promo {
+}
+
+.success-stories {
+  background-color: #a1d683;
   display: flex;
-  width: 70%;
-  margin: 100px auto;
   align-items: center;
+  padding: 5% 15%;
+  justify-content: space-around;
 }
 
-.promo > * {
-  margin: auto 20px;
+.overview {
+  display: block;
+  flex: 2;
+  margin-right: 100px;
 }
 
-.video-text > h2 {
+.overview h2 {
+  font-family: 'Alegreya', serif;
+  font-size: 51px;
+  line-height: 61px;
   color: #025157;
 }
 
-.video-text > p {
+.overview p {
   color: #343434;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 1rem;
 }
 
-.video-container > img {
-  margin: auto;
+.overview button {
+  background-color: #025157;
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  padding: 12px 12px 12px 12px;
+  border-radius: 8px;
+  height: 45px;
+  font-weight: 600;
+  margin-left: 0;
+}
+
+.overview img {
+  width: 500px;
+}
+
+.card {
+  max-width: 370px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.card-media img {
+  width: 100%;
+  max-height: 16vw;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.company {
+  position: absolute;
+  right: 263px;
+  bottom: 350px;
+  width: 100px;
+  height: 100px;
+  background-color: #f9da73;
+  border-radius: 50%;
   display: flex;
-  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.company img {
+  max-width: 75%;
+}
+
+.card-body {
+  padding: 25px;
+}
+
+.card-body h4 {
+  color: #025157;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 20px;
+  margin-bottom: 12px;
+}
+
+.card-body h3 {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.results {
+  display: flex;
+  align-items: center;
+  color: #828282;
+}
+
+.results img {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  margin-right: 20px;
+}
+
+.card-footer {
+  margin-bottom: 20px;
+  background-color: unset;
+  border-top: unset;
+  padding: 25px;
+}
+
+.card-footer button {
+  background-color: #025157;
+  color: #fff;
+  border: none;
+  display: block;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 12px 20px;
+  margin: auto;
 }
