@@ -159,8 +159,8 @@ body {
 
 .company {
   position: absolute;
-  right: 263px;
-  bottom: 350px;
+  right: 247px;
+  bottom: -447px;
   width: 100px;
   height: 100px;
   background-color: #f9da73;
@@ -223,4 +223,51 @@ body {
   font-weight: 600;
   padding: 12px 20px;
   margin: auto;
+}
+
+.features {
+  background-color: #025157;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 330px);
+  padding: 60px 130px;
+}
+
+.feature-art {
+  display: flex;
+  background-color: white;
+  margin: 15px;
+  border-radius: 5px;
+  background-color: #fff;
+  align-items: center;
+  overflow: hidden;
+  padding: 80px 40px;
+}
+
+.feature-content {
+  padding-right: 20px;
+}
+
+.feature-content img {
+  width: 50px;
+}
+
+.feature-content h2 {
+  font-weight: 400;
+}
+
+.feature-content h4 {
+  color: #67b54b;
+}
+
+.feature-picture {
+  flex: 1;
+  width: 70%;
+  position: relative;
+  right: -50px;
+  height: 100%;
+}
+
+.feature-picture img {
+  height: 100%;
 }
