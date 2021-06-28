@@ -14,6 +14,7 @@ body {
   left: 0;
   right: 0;
   padding: 0;
+  z-index: 1030;
 }
 
 .navbar-brand {
@@ -264,10 +265,118 @@ body {
   flex: 1;
   width: 70%;
   position: relative;
-  right: -50px;
+  right: -80px;
   height: 100%;
 }
 
 .feature-picture img {
   height: 100%;
+}
+
+.how-works {
+  display: block;
+  background-color: #fffbf7;
+  padding: 5% 10%;
+  text-align: center;
+}
+
+.how-works h2 {
+  color: #025157;
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 400;
+  font-family: 'Alegreya', serif;
+  margin-bottom: 8px;
+}
+
+.how-works .description {
+  max-width: 60%;
+  color: #46484c;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0 auto;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.how-works .description a {
+  color: #67b54b;
+  text-decoration: none;
+}
+
+.how-works button {
+  background-color: #025157;
+  color: #fff;
+  border: none;
+  display: block;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 12px 20px;
+  margin: auto;
+}
+
+.how-works .steps {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.how-works .steps .card-step {
+  background: #fff;
+  border: 1px solid #dadada;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: left;
+}
+
+.card-step-image {
+  position: relative;
+  height: 350px;
+}
+
+.card-step-bg {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  border-style: none;
+}
+
+.card-step-icon {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 21px;
+}
+
+.card-step-body {
+  padding: 25px;
+}
+
+.card-step-body h3 {
+  color: #025157;
+  font-size: 30px;
+  line-height: 60px;
+  font-weight: 400;
+  font-family: 'Alegreya', serif;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.card-step-body p {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #46484c;
+  font-weight: 400;
+  height: 85px;
+  margin-bottom: 16px;
+}
+
+.card-step-body a {
+  text-decoration: none;
+  color: #67b54b;
+  font-size: 17px;
+  font-weight: 600;
 }
