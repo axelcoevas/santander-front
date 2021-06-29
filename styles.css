@@ -45,14 +45,19 @@ body {
 
 .ul-item {
   font-size: 1rem;
-  color: #025157;
   display: inline;
   margin: 0 4px;
   list-style: none;
 }
 
-.ul-item:hover {
+.ul-item a {
+  text-decoration: none;
+  color: #025157;
+}
+
+.ul-item a:hover {
   color: black;
+  font-weight: 600;
 }
 
 .buttons {
@@ -90,7 +95,7 @@ body {
 }
 
 .content {
-  margin-top: 50px;
+  margin-top: 100px;
   top: 0;
   right: 0;
   left: 0;
@@ -98,6 +103,60 @@ body {
 }
 
 .promo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.promo form {
+  margin: 50px auto;
+}
+
+.features {
+  background-color: #025157;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 330px);
+  padding: 7% 10%;
+}
+
+.feature-art {
+  display: flex;
+  background-color: white;
+  margin: 15px;
+  border-radius: 5px;
+  background-color: #fff;
+  align-items: center;
+  overflow: hidden;
+  padding: 80px 40px;
+}
+
+.feature-content {
+  padding-right: 20px;
+}
+
+.feature-content img {
+  width: 50px;
+}
+
+.feature-content h2 {
+  font-weight: 400;
+}
+
+.feature-content h4 {
+  color: #67b54b;
+}
+
+.feature-picture {
+  flex: 1;
+  width: 70%;
+  position: relative;
+  right: -80px;
+  height: 100%;
+}
+
+.feature-picture img {
+  height: 100%;
 }
 
 .success-stories {
@@ -226,53 +285,6 @@ body {
   margin: auto;
 }
 
-.features {
-  background-color: #025157;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 330px);
-  padding: 60px 130px;
-}
-
-.feature-art {
-  display: flex;
-  background-color: white;
-  margin: 15px;
-  border-radius: 5px;
-  background-color: #fff;
-  align-items: center;
-  overflow: hidden;
-  padding: 80px 40px;
-}
-
-.feature-content {
-  padding-right: 20px;
-}
-
-.feature-content img {
-  width: 50px;
-}
-
-.feature-content h2 {
-  font-weight: 400;
-}
-
-.feature-content h4 {
-  color: #67b54b;
-}
-
-.feature-picture {
-  flex: 1;
-  width: 70%;
-  position: relative;
-  right: -80px;
-  height: 100%;
-}
-
-.feature-picture img {
-  height: 100%;
-}
-
 .how-works {
   display: block;
   background-color: #fffbf7;
@@ -379,4 +391,70 @@ body {
   color: #67b54b;
   font-size: 17px;
   font-weight: 600;
+}
+
+@media (max-width: 575px) {
+  .buttons,
+  .actions {
+    display: none;
+  }
+
+  .content {
+    margin-top: 130px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .promo .capterra {
+    width: 100%;
+  }
+
+  .promo form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .features {
+    grid-template-rows: repeat(4, 330px);
+    grid-template-columns: none;
+  }
+
+  .success-stories {
+    flex-direction: column;
+  }
+
+  .success-stories .overview img {
+    width: 100%;
+  }
+
+  .success-stories .card .card-media img {
+    max-height: none;
+  }
+
+  .how-works .steps {
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: none;
+  }
+
+  .how-works .steps article {
+    margin: 20px auto;
+  }
+
+  .feature-art {
+    padding: 10px 10px;
+  }
+
+  .feature-art h2 {
+    font-size: 20px;
+  }
+
+  .feature-content {
+    padding-right: 0;
+  }
+
+  .feature-picture {
+    display: none;
+  }
 }
