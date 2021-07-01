@@ -8,34 +8,28 @@ body {
 
 .navbar {
   background-color: white;
-  position: fixed;
   line-height: 45px;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding: 0 10px;
-  z-index: 1030;
 }
 
 .navbar-brand {
   display: inline-block;
-  margin-top: auto;
   margin-bottom: auto;
+  margin-top: auto;
   width: 15%;
 }
 
 .navbar-brand img {
   display: inline;
-  vertical-align: middle;
-  margin: 0 auto;
   height: 35px;
+  margin: 0 auto;
+  vertical-align: middle;
 }
 
 .actions {
   display: inline-flex;
+  height: 100%;
   margin: auto;
   width: 65%;
-  height: 100%;
 }
 
 .actions-ul {
@@ -44,15 +38,15 @@ body {
 }
 
 .ul-item {
-  font-size: 1rem;
   display: inline;
-  margin: 0 4px;
+  font-size: 1rem;
   list-style: none;
+  margin: 0 4px;
 }
 
 .ul-item a {
-  text-decoration: none;
   color: #025157;
+  text-decoration: none;
 }
 
 .ul-item a:hover {
@@ -88,24 +82,24 @@ body {
 
 .freetrial-button {
   background-color: #67b54b;
-  color: white;
   border: none;
   border-radius: 4px;
+  color: white;
   width: 120px;
 }
 
 .content {
-  margin-top: 100px;
-  top: 0;
-  right: 0;
-  left: 0;
   bottom: 0;
+  left: 0;
+  margin-top: 77px;
+  right: 0;
+  top: 0;
 }
 
 .promo {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .promo form {
@@ -121,12 +115,12 @@ body {
 }
 
 .feature-art {
-  display: flex;
-  background-color: white;
-  margin: 15px;
-  border-radius: 5px;
-  background-color: #fff;
   align-items: center;
+  background-color: white;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  margin: 15px;
   overflow: hidden;
   padding: 80px 40px;
 }
@@ -149,10 +143,10 @@ body {
 
 .feature-picture {
   flex: 1;
-  width: 70%;
+  height: 100%;
   position: relative;
   right: -80px;
-  height: 100%;
+  width: 70%;
 }
 
 .feature-picture img {
@@ -160,11 +154,11 @@ body {
 }
 
 .success-stories {
+  align-items: center;
   background-color: #a1d683;
   display: flex;
-  align-items: center;
-  padding: 5% 15%;
   justify-content: space-around;
+  padding: 5% 15%;
 }
 
 .overview {
@@ -174,10 +168,10 @@ body {
 }
 
 .overview h2 {
+  color: #025157;
   font-family: 'Alegreya', serif;
   font-size: 51px;
   line-height: 61px;
-  color: #025157;
 }
 
 .overview p {
@@ -189,14 +183,14 @@ body {
 
 .overview button {
   background-color: #025157;
-  color: #fff;
   border: none;
-  font-size: 14px;
-  padding: 12px 12px 12px 12px;
   border-radius: 8px;
-  height: 45px;
+  color: #fff;
+  font-size: 14px;
   font-weight: 600;
+  height: 45px;
   margin-left: 0;
+  padding: 12px 12px 12px 12px;
 }
 
 .overview img {
@@ -204,30 +198,30 @@ body {
 }
 
 .card {
-  max-width: 370px;
-  width: 100%;
   background-color: #fff;
   border-radius: 10px;
+  max-width: 370px;
+  width: 100%;
 }
 
 .card-media img {
-  width: 100%;
-  max-height: 16vw;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  max-height: 16vw;
+  width: 100%;
 }
 
 .company {
-  position: absolute;
-  right: 247px;
-  bottom: -447px;
-  width: 100px;
-  height: 100px;
+  align-items: center;
   background-color: #f9da73;
   border-radius: 50%;
+  bottom: -447px;
   display: flex;
+  height: 100px;
   justify-content: center;
-  align-items: center;
+  position: absolute;
+  right: 247px;
+  width: 100px;
 }
 
 .company img {
@@ -254,61 +248,61 @@ body {
 }
 
 .results {
-  display: flex;
   align-items: center;
   color: #828282;
+  display: flex;
 }
 
 .results img {
   display: inline-block;
-  width: 26px;
   height: 26px;
   margin-right: 20px;
+  width: 26px;
 }
 
 .card-footer {
-  margin-bottom: 20px;
   background-color: unset;
   border-top: unset;
+  margin-bottom: 20px;
   padding: 25px;
 }
 
 .card-footer button {
   background-color: #025157;
-  color: #fff;
   border: none;
-  display: block;
   border-radius: 5px;
+  color: #fff;
+  display: block;
   font-size: 20px;
   font-weight: 600;
-  padding: 12px 20px;
   margin: auto;
+  padding: 12px 20px;
 }
 
 .how-works {
-  display: block;
   background-color: #fffbf7;
+  display: block;
   padding: 5% 10%;
   text-align: center;
 }
 
 .how-works h2 {
   color: #025157;
-  font-size: 50px;
-  line-height: 60px;
-  font-weight: 400;
   font-family: 'Alegreya', serif;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 60px;
   margin-bottom: 8px;
 }
 
 .how-works .description {
-  max-width: 60%;
   color: #46484c;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
   margin: 0 auto;
   margin-bottom: 16px;
+  max-width: 60%;
   text-align: center;
 }
 
@@ -319,20 +313,20 @@ body {
 
 .how-works button {
   background-color: #025157;
-  color: #fff;
   border: none;
-  display: block;
   border-radius: 5px;
+  color: #fff;
+  display: block;
   font-size: 13px;
   font-weight: 600;
-  padding: 12px 20px;
   margin: auto;
+  padding: 12px 20px;
 }
 
 .how-works .steps {
-  margin-top: 70px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  margin-top: 70px;
 }
 
 .how-works .steps .card-step {
@@ -345,21 +339,21 @@ body {
 }
 
 .card-step-image {
-  position: relative;
   height: 350px;
+  position: relative;
 }
 
 .card-step-bg {
-  width: 100%;
+  border-style: none;
   height: 100%;
   vertical-align: middle;
-  border-style: none;
+  width: 100%;
 }
 
 .card-step-icon {
+  left: 25px;
   position: absolute;
   top: 25px;
-  left: 25px;
   width: 21px;
 }
 
@@ -369,28 +363,33 @@ body {
 
 .card-step-body h3 {
   color: #025157;
-  font-size: 30px;
-  line-height: 60px;
-  font-weight: 400;
   font-family: 'Alegreya', serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 60px;
   margin-bottom: 8px;
   text-align: center;
 }
 
 .card-step-body p {
-  font-size: 15px;
-  line-height: 1.5;
   color: #46484c;
+  font-size: 15px;
   font-weight: 400;
   height: 85px;
+  line-height: 1.5;
   margin-bottom: 16px;
 }
 
 .card-step-body a {
-  text-decoration: none;
   color: #67b54b;
   font-size: 17px;
   font-weight: 600;
+  text-decoration: none;
+}
+
+.card-reto {
+  margin: 20px;
+  padding: 10px;
 }
 
 @media (max-width: 575px) {
@@ -400,7 +399,7 @@ body {
   }
 
   .content {
-    margin-top: 130px;
+    margin-top: 71px;
   }
 
   h2 {
@@ -417,8 +416,8 @@ body {
   }
 
   .features {
-    grid-template-rows: repeat(4, 330px);
     grid-template-columns: none;
+    grid-template-rows: repeat(4, 330px);
   }
 
   .success-stories {
@@ -434,8 +433,8 @@ body {
   }
 
   .how-works .steps {
-    grid-template-rows: repeat(4, 1fr);
     grid-template-columns: none;
+    grid-template-rows: repeat(4, 1fr);
   }
 
   .how-works .steps article {
