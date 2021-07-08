@@ -7,7 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./output.css">
   <title>Matcha</title>
 </head>
 
@@ -94,16 +95,110 @@
         </a>
       </div>
     </div>
+    <section class="container blog">
+      <div class="row">
+        <div class="col">
+          <h2 class="title">Learn how to grow your ecommerce business.</h2>
+          <article class="process-list">
+            <div class="process my-5 row">
+              <div class="process-icon">
+                <img src="https://bedu-fef.netlify.app/icons/build.svg" alt="Build icon" />
+              </div>
+              <div class="process-description">
+                <h3>Build</h3>
+                <p>and scale your ecommerce store</p>
+              </div>
+            </div>
+            <div class="process my-5 row">
+              <div class="process-icon">
+                <img src="https://bedu-fef.netlify.app/icons/attract.svg" alt="Attract icon" />
+              </div>
+              <div class="process-description">
+                <h3>Attract</h3>
+                <p>your target audience and grow site traffic</p>
+              </div>
+            </div>
+            <div class="process my-5 row">
+              <div class="process-icon">
+                <img src="https://bedu-fef.netlify.app/icons/convert.svg" alt="Convert icon" />
+              </div>
+              <div class="process-description">
+                <h3>Convert</h3>
+                <p>readers to subscribers and customers</p>
+              </div>
+            </div>
+          </article>
+          <button>Read the blog</button>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://getmatcha.com/wp-content/uploads/2019/03/david-marcu-114194-1052x699.jpg"
+              class="card-img-top"
+              alt="Ecommerce Blogging: The 2020 Guide for Online Stores and DTC Brands"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Ecommerce Blogging: The 2020 Guide for Online Stores and DTC Brands
+              </h5>
+              <p class="metadata">
+                <strong class="category">Performance Blogging </strong>
+                <strong class="read-time">• 21 mins read</strong>
+              </p>
+              <p class="card-text">
+                Table of ContentsWhy Ecommerce Businesses Need a Blog in
+                2020Document Your Ecommerce Blog StrategyPublication: How to...
+                <span class="read-more">+ <a>Read More</a></span>
+              </p>
+              <div class="author">
+                <img
+                  src="https://secure.gravatar.com/avatar/b1c37d9c6b3a36a5eb64d7112bf71ca4?s=96&d=retro&r=g"
+                  alt="Shauna Ward"
+                />
+                <p>Shauna Ward</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="https://getmatcha.com/wp-content/uploads/2019/06/arnel-hasanovic-MNd-Rka1o0Q-1049x699.jpg"
+              class="card-img-top"
+              alt="Ecommerce Blogging: The 2020 Guide for Online Stores and DTC Brands"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                What Is Licensed Content and How Does It Help Your Business Grow?
+              </h5>
+              <p class="metadata">
+                <strong class="category">Performance Blogging </strong>
+                <strong class="read-time">• 6 mins read</strong>
+              </p>
+              <p class="card-text">
+                TL;DR: Licensed content, sometimes called syndicated content, is content produced by a professional publisher that can be legally licensed for...
+                <span class="read-more">+ <a>Read More</a></span>
+              </p>
+              <div class="author">
+                <img
+                  src="https://secure.gravatar.com/avatar/c2f0381c76fae0875a4c15deb4e0a2f8?s=96&d=retro&r=g"
+                  alt="Shauna Ward"
+                />
+                <p>Shauna Ward</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <div class="promo">
       <img class="capterra" src="https://getmatcha.com/wp-content/themes/getmatcha/img/capterra.png" />
-      <form>
-        <label for="name">Nombre</label>
-        <input type="text" id="name" name="fname" required>
-        <input type="text" id="lastname" name="lastname" placeholder="Apellido">
-        <input type="number" id="age" name="age" placeholder="Edad" min="18" max="35">
-        <input type="email" id="email" name="email" placeholder="Correo">
-        <input type="password" id="password" name="password" placeholder="Contraseña">
-        <button type="submit">Enviar</button>
+      <form class="signup-form">
+        <p>Start publishing today:</p>
+        <div>
+          <input id="email" type="email" placeholder="Enter email" required />
+          <button type="submit">Start My Trial</button>
+        </div>
       </form>
     </div>
     <section class="features">
@@ -275,6 +370,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
     integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
     crossorigin="anonymous"></script>
+  <script src="./app.js"></script>
 </body>
 
 </html>
